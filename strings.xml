@@ -1,0 +1,4 @@
+<resources>
+<string name="app_name">PhantomEye</string>
+    <string name="accessibility_service_description">Security monitoring service for PhantomEye protection</string>
+</resources>

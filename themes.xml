@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for PhantomEye Security -->
+    <style name="Theme.MyApplication"
+    parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color - Emerald Green -->
+        <item name="colorPrimary">@color/emerald_glow</item>
+        <item name="colorPrimaryVariant">@color/emerald_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color - Ruby Red -->
+        <item name="colorSecondary">@color/ruby_red</item>
+        <item name="colorSecondaryVariant">@color/ruby_red_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/charcoal_bg</item>
+        <item name="android:colorBackground">@color/charcoal_bg</item>
+        <item name="android:colorForeground">@color/white</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/charcoal_bg</item>
+        <item name="android:navigationBarColor">@color/charcoal_bg</item>
+        
+        <!-- CardView theme -->
+        <item name="cardViewStyle">@style/CardView.PhantomEye</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.PhantomEye.Button</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Dialog theme -->
+        <item name="android:dialogTheme">@style/ThemeOverlay.PhantomEye.Dialog</item>
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.PhantomEye.Dialog</item>
+        
+        <!-- Disable action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        
+        <!-- For API 21+ -->
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+    </style>
+
+    <!-- CardView style for glassmorphic effect -->
+    <style name="CardView.PhantomEye" parent="CardView">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="Widget.PhantomEye.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">30dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!-- Dialog Theme Overlay -->
+    <style name="ThemeOverlay.PhantomEye.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="colorPrimary">@color/emerald_glow</item>
+        <item name="colorSecondary">@color/ruby_red</item>
+    </style>
+
+    <!-- REMOVED Splash Screen Theme - Not compatible with your SDK -->
+</resources>
